@@ -21,6 +21,7 @@ body {
 }
 
 ul#slots-list {
+    list-style-type: none;
     padding: 0.5em;
     margin: 0.5em;
     display: flex;
@@ -29,7 +30,6 @@ ul#slots-list {
 }
 
 ul#slots-list li {
-    list-style-type: none;
     display: inline-block;
 }
 
@@ -40,6 +40,7 @@ ul#slots-list ul.slot li {
 }
 
 ul.slot {
+    list-style-type: none;
     background-color: #d8d8d8;
     margin: 0.2em;
     padding: 0.2em;
@@ -47,4 +48,55 @@ ul.slot {
 
 ul.slot input {
     width: 2em;
+}
+
+ul.roll-list {
+    list-style-type: none;
+    padding: 0.2em;
+    margin: 0.2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+ul.roll-list li {
+    display: inline-block;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+li.rollcard {
+    background-color: #d8d8d8;
+    border-top: 0.3em solid #f0f0f0;
+}
+
+li.rollcard.event-2,
+li.rollcard.event-3 {
+    background-color: #bbbbdd;
+}
+
+li.rollcard.event-3 {
+    border-color: #938cff;
+}
+
+li.rollcard.event-2.payout-yes,
+li.rollcard.event-3.payout-yes {
+    background-color: #e9dd73;
+}
+
+li.rollcard.event-3.payout-yes {
+    border-color: #d7ad00;
+}
+
+.rollcard ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rollcard ul li.rollsym {
+    margin: 0.1em;
+    padding: 0;
+    min-width: 1.3em;
+    text-align: center;
 }

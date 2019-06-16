@@ -34,8 +34,8 @@
             <ul id="slots-list">
                 <li id="slot-1" class="slot">
                     <ul class="slot">
-                        <li>Symbol: <input type="text" class="ipt_symbol" name="slot-1_symbol"></li>
-                        <li>Payout: <input type="text" class="ipt_payout" name="slot-1_payout"></li>
+                        <li>Symbol: <input type="text" class="ipt_symbol" id="slot-1_symbol"></li>
+                        <li>Payout: <input type="text" class="ipt_payout" id="slot-1_payout"></li>
                     </ul>
                 </li>
             </ul>
@@ -43,11 +43,12 @@
     </div>
     <div id="slots" class="block">
         <div id="roll-buttons" class="title-block">
-            <button id="btn_roll" disabled="true">Roll</button>
-            <button id="btn_roll_e" disabled="true">Roll until event</button>
-            <button id="btn_roll_p" disabled="true">Roll until payout</button>
+            <button id="btn_roll">Roll</button>
+            <button id="btn_roll_e">Roll until event</button>
+            <button id="btn_roll_p">Roll until payout</button>
         </div>
         <div id="roll-history" class="content-block">
+            <ul id="rolls-current" class="roll-list"></ul>
         </div>
     </div>
 </body>
