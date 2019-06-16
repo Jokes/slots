@@ -13,20 +13,24 @@
     <div id="header" class="block">
         <div id="menu">
             <div id="load-save">
-                <button id="btn_load">Load from file...</button>
-                <button id="btn_save">Save to file...</button>
+                <button id="btn_load" disabled="true">Load from file...</button>
+                <button id="btn_save" disabled="true">Save to file...</button>
             </div>
         </div>
     </div>
     <div id="machine" class="block">
         <div id="machine-info" class="title-block">
-            Machine: <select name="select_machine">
+            <span class="infocard">Machine: <select id="sct_machine">
                 <option value="new">[new machine]</option>
-            </select> Name: <input type="text" name="machine_name" value="[new machine]">
+            </select></span>
+            <span class="infocard">Name: <input type="text" id="ipt_name" value="[new machine]"></span>
+            <span class="infocard">Price: <input type="text" id="ipt_price" value="1"></span>
         </div>
         <div id="machine-slots" class="content-block">
-            <div id="quickload"><textarea id="txt_qload"></textarea><button id="btn_qload">Quick Load</button></div>
-            <div id="slots-info">No. of Symbols: <input id="ipt_slotcount" value="1"></div>
+            <div id="quickload">
+                <textarea id="txt_qload">⚡ 📀 ❤ 🔥 😈 🐉 🌹 🦈 🍑 🚫 ❄ 💔 🔄 🌩 🌪 💰 ☠ 🖤 💕 ⏳</textarea>
+                <button id="btn_qload">Quick Load</button></div>
+            <div id="slots-info">No. of Symbols: <span id="slotcount">1</span></div>
             <ul id="slots-list">
                 <li id="slot-1" class="slot">
                     <ul class="slot">
@@ -39,9 +43,9 @@
     </div>
     <div id="slots" class="block">
         <div id="roll-buttons" class="title-block">
-            <button>Roll</button>
-            <button>Roll until event</button>
-            <button>Roll until payout</button>
+            <button id="btn_roll" disabled="true">Roll</button>
+            <button id="btn_roll_e" disabled="true">Roll until event</button>
+            <button id="btn_roll_p" disabled="true">Roll until payout</button>
         </div>
         <div id="roll-history" class="content-block">
         </div>
