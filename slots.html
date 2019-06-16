@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>slots</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="slots.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="slots.js"></script>
+</head>
+
+<body>
+    <div id="header" class="block">
+        <div id="menu">
+            <div id="load-save">
+                <button id="btn_load">Load from file...</button>
+                <button id="btn_save">Save to file...</button>
+            </div>
+        </div>
+    </div>
+    <div id="machine" class="block">
+        <div id="machine-info" class="title-block">
+            Machine: <select name="select_machine">
+                <option value="new">[new machine]</option>
+            </select> Name: <input type="text" name="machine_name" value="[new machine]">
+        </div>
+        <div id="machine-slots" class="content-block">
+            <div id="quickload"><textarea id="txt_qload"></textarea><button id="btn_qload">Quick Load</button></div>
+            <div id="slots-info">No. of Symbols: <input id="ipt_slotcount" value="1"></div>
+            <ul id="slots-list">
+                <li id="slot-1" class="slot">
+                    <ul class="slot">
+                        <li>Symbol: <input type="text" class="ipt_symbol" name="slot-1_symbol"></li>
+                        <li>Payout: <input type="text" class="ipt_payout" name="slot-1_payout"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="slots" class="block">
+        <div id="roll-buttons" class="title-block">
+            <button>Roll</button>
+            <button>Roll until event</button>
+            <button>Roll until payout</button>
+        </div>
+        <div id="roll-history" class="content-block">
+        </div>
+    </div>
+</body>
+
+</html>
