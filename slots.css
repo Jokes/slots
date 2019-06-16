@@ -20,8 +20,12 @@ body {
     padding: 0.5em;
 }
 
-ul.slot input {
-    width: 2em;
+ul#slots-list {
+    padding: 0.5em;
+    margin: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 ul#slots-list li {
@@ -39,4 +43,8 @@ ul.slot {
     background-color: #d8d8d8;
     margin: 0.2em;
     padding: 0.2em;
+}
+
+ul.slot input {
+    width: 2em;
 }
