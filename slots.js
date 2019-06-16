@@ -1,16 +1,13 @@
-function addSymbol(sym, id) {
-    var pay = 0;
-    if (sym == "💰") {
-        pay = 10;
-    } else if (sym == "🍒") {
-        pay = 8;
-    } else if (sym == "6") {
-        pay = 6;
-    } else if (sym == "💎") {
-        pay = 4;
-    } else if (sym == "📀") {
-        pay = 2;
+function defaultPayout(sym) {
+    var p = defaultPayouts[sym];
+    if (p == null) {
+        p = 0;
     }
+    return p;
+}
+
+function addSymbol(sym, id) {
+    var pay = defaultPayout(sym);
     var symhtml = '<li id="slot-' + id + '" class="slot"> <ul class="slot"> \
     <li>Symbol: <input type="text" class="ipt_symbol" id="slot-' + id + '_symbol" value="' + sym + '"></li> \
     <li>Payout: <input type="text" class="ipt_payout" id="slot-' + id + '_payout" value="' + pay + '"></li> </ul></li>';
@@ -70,15 +67,12 @@ function cutRollSection() {
 $(document).ready(function() {
 
     $("#btn_qload").click(function() {
-        // quickload from textarea
-        var qlstra = Array.from($("#txt_qload").val().replace(/\s/g, ""));
+        var qlstra = $("#txt_qload").val().split(/\s+/);
         var count = 0;
         $("#slots-list").empty();
         for (var i = 0; i < qlstra.length; i++) {
-            if (qlstra[i] != ',') {
-                count++;
-                addSymbol(qlstra[i], count);
-            }
+            count++;
+            addSymbol(qlstra[i], count);
         }
         $("#slotcount").text("" + count);
     });

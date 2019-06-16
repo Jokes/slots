@@ -1,253 +1,193 @@
 {
     "machines": [{
             "name": "lightning",
-            "pairs": [{
-                    "emoji": "⚡",
-                    "effect": ""
+            "symbols": [{
+                    "symbol": "⚡"
                 },
                 {
-                    "emoji": "📀",
-                    "effect": ""
+                    "symbol": "📀"
                 },
                 {
-                    "emoji": "❤️",
-                    "effect": ""
+                    "symbol": "❤️"
                 },
                 {
-                    "emoji": "🔥",
-                    "effect": ""
+                    "symbol": "🔥"
                 },
                 {
-                    "emoji": "😈",
-                    "effect": ""
+                    "symbol": "😈"
                 },
                 {
-                    "emoji": "🐉",
-                    "effect": ""
+                    "symbol": "🐉"
                 },
                 {
-                    "emoji": "🌹",
-                    "effect": ""
+                    "symbol": "🌹"
                 },
                 {
-                    "emoji": "🦈",
-                    "effect": ""
+                    "symbol": "🦈"
                 },
                 {
-                    "emoji": "🍑",
-                    "effect": ""
+                    "symbol": "🍑"
                 },
                 {
-                    "emoji": "🚫",
-                    "effect": ""
+                    "symbol": "🚫"
                 },
                 {
-                    "emoji": "❄️",
-                    "effect": ""
+                    "symbol": "❄️"
                 },
                 {
-                    "emoji": "💔",
-                    "effect": ""
+                    "symbol": "💔"
                 },
                 {
-                    "emoji": "🔄",
-                    "effect": ""
+                    "symbol": "🔄"
                 },
                 {
-                    "emoji": "🌩️",
-                    "effect": ""
+                    "symbol": "🌩️"
                 },
                 {
-                    "emoji": "🌪️",
-                    "effect": ""
+                    "symbol": "🌪️"
                 },
                 {
-                    "emoji": "💰",
-                    "effect": ""
+                    "symbol": "💰"
                 },
                 {
-                    "emoji": "☠️",
-                    "effect": ""
+                    "symbol": "☠️"
                 },
                 {
-                    "emoji": "🖤",
-                    "effect": ""
+                    "symbol": "🖤"
                 },
                 {
-                    "emoji": "💕",
-                    "effect": ""
+                    "symbol": "💕"
                 },
                 {
-                    "emoji": "⏳",
-                    "effect": ""
+                    "symbol": "⏳"
                 }
             ]
         },
         {
             "name": "iron maiden",
-            "pairs": [{
-                    "emoji": "💰",
-                    "effect": ""
+            "symbols": [{
+                    "symbol": "💰"
                 },
                 {
-                    "emoji": "🍒",
-                    "effect": ""
+                    "symbol": "🍒"
                 },
                 {
-                    "emoji": "6",
-                    "effect": ""
+                    "symbol": "6"
                 },
                 {
-                    "emoji": "💎",
-                    "effect": ""
+                    "symbol": "💎"
                 },
                 {
-                    "emoji": "📀",
-                    "effect": ""
+                    "symbol": "📀"
                 },
                 {
-                    "emoji": "🖐",
-                    "effect": ""
+                    "symbol": "🖐"
                 },
                 {
-                    "emoji": "👁️",
-                    "effect": ""
+                    "symbol": "👁️"
                 },
                 {
-                    "emoji": "💋",
-                    "effect": ""
+                    "symbol": "💋"
                 },
                 {
-                    "emoji": "👣",
-                    "effect": ""
+                    "symbol": "👣"
                 },
                 {
-                    "emoji": "💘",
-                    "effect": ""
+                    "symbol": "💘"
                 },
                 {
-                    "emoji": "🔑",
-                    "effect": ""
+                    "symbol": "🔑"
                 },
                 {
-                    "emoji": "🍑",
-                    "effect": ""
+                    "symbol": "🍑"
                 },
                 {
-                    "emoji": "🍎",
-                    "effect": ""
+                    "symbol": "🍎"
                 },
                 {
-                    "emoji": "🎲",
-                    "effect": ""
+                    "symbol": "🎲"
                 },
                 {
-                    "emoji": "🎯",
-                    "effect": ""
+                    "symbol": "🎯"
                 },
                 {
-                    "emoji": "⭐",
-                    "effect": ""
+                    "symbol": "⭐"
                 },
                 {
-                    "emoji": "🔥",
-                    "effect": ""
+                    "symbol": "🔥"
                 },
                 {
-                    "emoji": "⚰️",
-                    "effect": ""
+                    "symbol": "⚰️"
                 },
                 {
-                    "emoji": "⏳",
-                    "effect": ""
+                    "symbol": "⏳"
                 },
                 {
-                    "emoji": "❄️",
-                    "effect": ""
+                    "symbol": "❄️"
                 }
             ]
         },
         {
             "name": "dunk tank",
-            "pairs": [{
-                    "emoji": "💰",
-                    "effect": ""
+            "symbols": [{
+                    "symbol": "💰"
                 },
                 {
-                    "emoji": "💎",
-                    "effect": ""
+                    "symbol": "💎"
                 },
                 {
-                    "emoji": "📀",
-                    "effect": ""
+                    "symbol": "📀"
                 },
                 {
-                    "emoji": "🍒",
-                    "effect": ""
+                    "symbol": "🍒"
                 },
                 {
-                    "emoji": "6️",
-                    "effect": ""
+                    "symbol": "6️"
                 },
                 {
-                    "emoji": "❄️",
-                    "effect": ""
+                    "symbol": "❄️"
                 },
                 {
-                    "emoji": "🔥",
-                    "effect": ""
+                    "symbol": "🔥"
                 },
                 {
-                    "emoji": "⚡",
-                    "effect": ""
+                    "symbol": "⚡"
                 },
                 {
-                    "emoji": "🦑",
-                    "effect": ""
+                    "symbol": "🦑"
                 },
                 {
-                    "emoji": "🐟",
-                    "effect": ""
+                    "symbol": "🐟"
                 },
                 {
-                    "emoji": "🔒",
-                    "effect": ""
+                    "symbol": "🔒"
                 },
                 {
-                    "emoji": "☠️",
-                    "effect": ""
+                    "symbol": "☠️"
                 },
                 {
-                    "emoji": "⭐",
-                    "effect": ""
+                    "symbol": "⭐"
                 },
                 {
-                    "emoji": "🌼",
-                    "effect": ""
+                    "symbol": "🌼"
                 },
                 {
-                    "emoji": "⚰️",
-                    "effect": ""
+                    "symbol": "⚰️"
                 },
                 {
-                    "emoji": "🚫",
-                    "effect": ""
+                    "symbol": "🚫"
                 },
                 {
-                    "emoji": "🔁",
-                    "effect": ""
+                    "symbol": "🔁"
                 },
                 {
-                    "emoji": "😈",
-                    "effect": ""
+                    "symbol": "😈"
                 },
                 {
-                    "emoji": "💕",
-                    "effect": ""
+                    "symbol": "💕"
                 },
                 {
-                    "emoji": "💋",
-                    "effect": ""
+                    "symbol": "💋"
                 }
             ]
         }
