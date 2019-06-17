@@ -64,17 +64,40 @@ function cutRollSection() {
     $("#roll-history").append('<ul id="rolls-current" class="roll-list"></ul>');
 }
 
+function updateStats(count, pcount, ptotal) {
+    // unfortunately, combinatorics
+    var perm = count * count * count;
+    var noPay = (count - pcount) * (count - pcount) * count;
+    var yesPay = perm - noPay;
+    var payChance = yesPay / perm;
+    var smallPayChance = (yesPay - pcount) / perm;
+    var bigPayChance = payChance - smallPayChance;
+    var avgPay = ptotal / pcount;
+    var ev = avgPay * smallPayChance + avgPay * 10 * bigPayChance - $("#ipt_price").val();
+
+    $("#ev").text("" + ev);
+    $("#odds").text("" + payChance);
+    $("#slotcount").text("" + count);
+}
+
 $(document).ready(function() {
 
     $("#btn_qload").click(function() {
         var qlstra = $("#txt_qload").val().split(/\s+/);
         var count = 0;
+        var paycount = 0;
+        var paytotal = 0;
         $("#slots-list").empty();
         for (var i = 0; i < qlstra.length; i++) {
             count++;
             addSymbol(qlstra[i], count);
+            var pay = defaultPayout(qlstra[i]);
+            if (pay > 0) {
+                paycount++;
+                paytotal += pay;
+            }
         }
-        $("#slotcount").text("" + count);
+        updateStats(count, paycount, paytotal);
     });
 
     $("#btn_roll").click(function() {

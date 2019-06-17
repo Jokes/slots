@@ -20,6 +20,20 @@ body {
     padding: 0.5em;
 }
 
+#slots-info {
+    margin: 0.2em;
+    padding: 0.2em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#slots-info .infocard {
+    border: 1px solid #d8d8d8;
+    border-left-width: 0.3em;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
 ul#slots-list {
     list-style-type: none;
     padding: 0.5em;
