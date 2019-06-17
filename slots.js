@@ -67,11 +67,13 @@ function cutRollSection() {
 function updateStats(count, pcount, ptotal) {
     // unfortunately, combinatorics
     var perm = count * count * count;
-    var noPay = (count - pcount) * (count - pcount) * count;
-    var yesPay = perm - noPay;
-    var payChance = yesPay / perm;
-    var smallPayChance = (yesPay - pcount) / perm;
-    var bigPayChance = payChance - smallPayChance;
+
+    var notOne = (count - 1) * (count - 1) * count; // the thing, but two of them aren't this symbol
+    var notAny = notOne * pcount; // that times the number of things
+    var yesAny = perm - notAny;
+    var payChance = yesAny / perm;
+    var smallPayChance = (yesAny - pcount) / perm; // big payoff happens with three of a kind
+    var bigPayChance = pcount / perm; // like so
     var avgPay = ptotal / pcount;
     var ev = avgPay * smallPayChance + avgPay * 10 * bigPayChance - $("#ipt_price").val();
 
