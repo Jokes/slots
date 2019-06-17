@@ -69,8 +69,8 @@ function updateStats(count, pcount, ptotal) {
     var perm = count * count * count;
 
     var notOne = (count - 1) * (count - 1) * count; // the thing, but two of them aren't this symbol
-    var notAny = notOne * pcount; // that times the number of things
-    var yesAny = perm - notAny;
+    var yesOne = perm - notOne;
+    var yesAny = yesOne * pcount; // that times the number of things
     var payChance = yesAny / perm;
     var smallPayChance = (yesAny - pcount) / perm; // big payoff happens with three of a kind
     var bigPayChance = pcount / perm; // like so
