@@ -15,19 +15,27 @@ function addSymbol(sym, id) {
 }
 
 function randomSlot() {
-    return Math.floor(Math.random() * $("#slotcount").text() + 1);
+    return Math.floor(Math.random() * $("#disp_symcount").text() + 1);
 }
 
-var sym = function(v) {
+var symInfo = function(v) {
     return {
         symbol: $("#slot-" + v + "_symbol").val(),
         payout: $("#slot-" + v + "_payout").val()
-    }
+    };
+}
+
+function getNumSlots() {
+    return $("#ipt_slotcount").val();
 }
 
 function fullRoll() {
-    var rolln = [randomSlot(), randomSlot(), randomSlot()];
-    var rolls = rolln.map(sym);
+    var slotn = getNumSlots();
+    var rolln = [];
+    for (var i = 0; i < slotn; i++) {
+        console.log(rolln.push([randomSlot()]));
+    }
+    var rolls = rolln.map(symInfo);
 
     var event = 1;
     var payout = 0;
@@ -49,8 +57,6 @@ function fullRoll() {
 }
 
 function rollHtml(r) {
-    console.log(r);
-    console.log(r.roll);
     var rh = r.roll.map(function(v) {
         return '<li class="rollsym">' + v.symbol + '</li>'
     }).join("");
@@ -77,9 +83,9 @@ function updateStats(count, pcount, ptotal) {
     var avgPay = ptotal / pcount;
     var ev = avgPay * smallPayChance + avgPay * 10 * bigPayChance - $("#ipt_price").val();
 
-    $("#ev").text("" + ev);
-    $("#odds").text("" + payChance);
-    $("#slotcount").text("" + count);
+    $("#disp_ev").text("" + ev);
+    $("#disp_odds").text("" + payChance);
+    $("#disp_symcount").text("" + count);
 }
 
 $(document).ready(function() {
