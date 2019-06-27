@@ -102,6 +102,25 @@ li.rollcard.event-3.payout-yes {
     border-color: #d7ad00;
 }
 
+li.rollcard.event-add li.rollsym {
+    background-color: #bbbbdd;
+    border: 0.2em solid #bbbbdd;
+}
+
+li.rollcard.event-add li.rollsym.sym-combo {
+    background-color: #bbbbdd;
+    border-color: #938cff;
+}
+
+li.rollcard.event-add li.rollsym.sym-payout {
+    background-color: #e9dd73;
+    border-color: #e9dd73;
+}
+
+li.rollcard.event-add li.rollsym.sym-payout.sym-combo {
+    border-color: #d7ad00;
+}
+
 .rollcard ul {
     list-style-type: none;
     margin: 0;

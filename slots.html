@@ -27,6 +27,10 @@
             <span class="infocard">Name: <input type="text" id="ipt_name" value="[new machine]"></span>
             <span class="infocard">Price: <input type="text" id="ipt_price" value="1"></span>
             <span class="infocard"># Slots: <input type="text" id="ipt_slotcount" value="3"></span>
+            <span class="infocard">Roll Style: <select id="sct_style">
+                <option value="additive">Additive</option>
+                <option value="combo" selected>Combo</option>
+            </select></span>
         </div>
         <div id="machine-slots" class="content-block">
             <div id="quickload">
@@ -52,6 +56,7 @@
             <button id="btn_roll">Roll</button>
             <button id="btn_roll_e">Roll until event</button>
             <button id="btn_roll_p">Roll until payout</button>
+            <button id="btn_clear">Clear roll history</button>
         </div>
         <div id="roll-history" class="content-block">
             <ul id="rolls-current" class="roll-list"></ul>
