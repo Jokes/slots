@@ -20,6 +20,15 @@ body {
     padding: 0.5em;
 }
 
+.ipt-short {
+    width: 2em;
+}
+
+#machine-info .infocard {
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
 #slots-info {
     margin: 0.2em;
     padding: 0.2em;

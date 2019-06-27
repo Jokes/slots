@@ -84,6 +84,8 @@ function cutRollSection() {
 }
 
 function updateStats(count, pcount, ptotal) {
+    // todo: revamp stat calculations to account for increased complexity
+
     var slotn = getNumSlots();
     var styleIsCombo = $("#sct_style").children("option:selected").val() == "combo";
     var payChance;
@@ -134,6 +136,9 @@ $(document).ready(function() {
     $("#btn_roll").click(function() {
         var styleIsAdd = $("#sct_style").children("option:selected").val() == "additive";
         var thisRoll = fullRoll(styleIsAdd);
+        if ($("#chk_retry").is(":checked") && thisRoll.event < 2) {
+            thisRoll = fullRoll(styleIsAdd);
+        }
         $("#rolls-current").append(rollHtml(thisRoll, styleIsAdd));
     });
 
@@ -145,6 +150,9 @@ $(document).ready(function() {
 
         for (var attempts = 0; event < 2 && attempts < 1000; attempts++) {
             thisRoll = fullRoll(styleIsAdd);
+            if ($("#chk_retry").is(":checked") && thisRoll.event < 2) {
+                thisRoll = fullRoll(styleIsAdd);
+            }
             $("#rolls-current").append(rollHtml(thisRoll, styleIsAdd));
             event = thisRoll.event;
         }
@@ -158,6 +166,9 @@ $(document).ready(function() {
 
         for (var attempts = 0; payout == 0 && attempts < 1000; attempts++) {
             thisRoll = fullRoll(styleIsAdd);
+            if ($("#chk_retry").is(":checked") && thisRoll.event < 2) {
+                thisRoll = fullRoll(styleIsAdd);
+            }
             $("#rolls-current").append(rollHtml(thisRoll, styleIsAdd));
             payout = thisRoll.payout;
         }
